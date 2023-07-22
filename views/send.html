@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Page</title>
+    <link rel="stylesheet" href="/css/send.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/">Message</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form onsubmit="document.getElementById('username').value=localStorage.getItem('username')" action="/" method="POST">
+            <input type="text" name="message" placeholder="Enter your message">
+            <input type="hidden" id="username" name="username">
+            <button type="submit">Send</button>
+        </form>
+    </main>
+</body>
+</html>

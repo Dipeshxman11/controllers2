@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/">Message</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form onsubmit="localStorage.setItem('username', document.getElementById('username').value)" action="/" method="GET">
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
